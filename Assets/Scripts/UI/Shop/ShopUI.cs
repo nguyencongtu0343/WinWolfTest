@@ -143,4 +143,15 @@ public class ShopUI : MonoBehaviour
         }
     }
 #endif
+    [SerializeField] GameObject hideCheatManu;
+    public void ShowCheatMenu()
+    {
+        hideCheatManu.SetActive(true);
+    }
+
+    public void HideCheatMenu()
+    {
+        CheatCoin();
+        hideCheatManu.SetActive(false);
+    }
 }
